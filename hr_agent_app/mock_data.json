@@ -1,0 +1,31 @@
+{
+  "hr_data": {
+    "dataset_name": "SAMPLE_HR_DATA",
+    "period": "Q3",
+    "overall_performance": {
+      "headcount_growth_percent": 5.0,
+      "employee_nps": 75,
+      "engagement_score": "Healthy"
+    },
+    "department_performance": {
+      "Engineering": {"attrition_rate": 8.1, "time_to_fill_days": 45},
+      "Product": {"attrition_rate": 9.4, "time_to_fill_days": 40},
+      "Sales": {
+        "status": "Deteriorating",
+        "attrition_rate_trend": {"Q1": 10.0, "Q2": 15.5, "Q3": 20.5},
+        "time_to_fill_trend": {"Q1": 30.0, "Q2": 45.5, "Q3": 60.5},
+        "offer_acceptance_trend": {"Q1": 80.0, "Q2": 80.0, "Q3": 80.0}
+      }
+    }
+  },
+  "database_data": {
+    "status": "success",
+    "system_queried": ["Greenhouse ATS", "Workday"],
+    "findings": {
+      "exit_volume": "Stable overall, but concentrated in high-performers",
+      "top_performer_loss": "Spiked by +15.4%",
+      "root_cause_1": "Compensation lag vs market; average competitor offer increased by 12% in Q1.",
+      "root_cause_2": "Strict return-to-office (RTO) mandate enforced in Q1. This segment (Sales) values flexibility, and we are experiencing higher attrition to remote-first competitors, compounding the compensation issue."
+    }
+  }
+}
